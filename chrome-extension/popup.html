@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <title>Salesforce Orgs</title>
+    <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+<header style="display: flex; justify-content: space-between; align-items: center;">
+    <h2 data-i18n="table_title"></h2>
+    <div style="display: flex; gap: 0.5em;">
+        <button id="applyGroupsBtn" class="secondary"><span data-i18n="apply_groups"></span></button>
+        <button id="settingsBtn" class="icon-btn" title="Settings">
+            <img src="icons/settings.png" alt="Settings" />
+        </button>
+    </div>
+</header>
+
+<section>
+    <table id="orgTable">
+        <thead>
+        <tr>
+            <th data-i18n="table_header_criteria"></th>
+            <th data-i18n="table_header_type"></th>
+            <th data-i18n="table_header_group_name"></th>
+            <th data-i18n="table_header_color"></th>
+            <th data-i18n="table_header_actions"></th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</section>
+
+<div class="button-container">
+    <button id="addOrgBtn" class="primary" data-i18n="add_org_table"></button>
+</div>
+
+<dialog id="addDialog">
+    <form method="dialog">
+        <h3 id="dialogTitle" data-i18n="add_org_dialog_title"></h3>
+
+        <label>
+            <span data-i18n="add_org_dialog_matching_criteria"></span>
+            <select id="matchType">
+                <option value="equals" data-i18n="add_org_dialog_matching_criteria_equals"></option>
+                <option value="contains" data-i18n="add_org_dialog_matching_criteria_contains"></option>
+            </select>
+        </label>
+
+        <label>
+            <span data-i18n="add_org_dialog_criteria"></span>
+            <input type="text" id="criteria" required />
+        </label>
+
+        <label>
+            <span data-i18n="add_org_dialog_groupname"></span>
+            <input type="text" id="groupName" required />
+        </label>
+
+        <label>
+            <span data-i18n="add_org_dialog_color"></span>
+            <select id="groupColor"></select>
+        </label>
+
+        <div class="dialog-actions">
+            <button id="cancelBtn" type="button" data-i18n="cancel"></button>
+            <button id="saveOrgBtn" class="primary" value="default" data-i18n="save"></button>
+        </div>
+    </form>
+</dialog>
+
+<dialog id="confirmDelete">
+    <p data-i18n="delete_entry_question"></p>
+    <div class="dialog-actions">
+        <button id="deleteCancelBtn" data-i18n="cancel"></button>
+        <button id="deleteConfirmBtn" class="primary" data-i18n="delete"></button>
+    </div>
+</dialog>
+
+<dialog id="settingsDialog">
+    <form method="dialog">
+        <h3 data-i18n="settings_title"></h3>
+
+        <div class="form-row">
+            <label for="autoGroupSwitch" data-i18n="settings_autogroup"></label>
+            <label class="switch">
+                <input type="checkbox" id="autoGroupSwitch">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="form-row">
+            <label for="languageSelect" data-i18n="language"></label>
+            <select id="languageSelect">
+                <option value="en" data-i18n="english"></option>
+                <option value="de" data-i18n="german"></option>
+            </select>
+        </div>
+
+        <div>
+            <button type="button" id="exportOrgsBtn" class="secondary" data-i18n="export_orgs"></button>
+            <button type="button" id="importOrgsBtn" class="secondary" data-i18n="import_orgs"></button>
+            <input type="file" id="importOrgsFile" accept=".json" style="display:none" />
+        </div>
+
+        <div class="dialog-actions">
+            <button id="cancelSettingsBtn" type="button" data-i18n="cancel"></button>
+            <button id="saveSettingsBtn" class="primary" data-i18n="save"></button>
+        </div>
+
+    </form>
+    <div class="settings-footer">
+        <div id="appVersion">Version: –</div>
+        <div id="appAuthor">Developed by Eric Dupont</div>
+        <div class="icon-credit">
+            Icons by <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">Flaticon</a>
+        </div>
+    </div>
+</dialog>
+
+<script type="module" src="popup.js"></script>
+</body>
+</html>

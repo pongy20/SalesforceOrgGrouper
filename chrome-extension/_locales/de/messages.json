@@ -1,0 +1,110 @@
+{
+  "cancel": {
+    "message": "Abbrechen"
+  },
+  "apply_groups": {
+    "message": "Gruppierung anwenden"
+  },
+  "save": {
+    "message": "Speichern"
+  },
+  "table_title": {
+    "message": "Salesforce Orgs"
+  },
+  "table_header_criteria": {
+    "message": "Kriterium"
+  },
+  "table_header_type": {
+    "message": "Typ"
+  },
+  "table_header_group_name": {
+    "message": "Gruppen Name"
+  },
+  "table_header_color": {
+    "message": "Farbe"
+  },
+  "table_header_actions": {
+    "message": "Aktionen"
+  },
+  "add_org_table": {
+    "message": "+ Neue Org hinzufügen"
+  },
+  "edit_org_dialog_title": {
+    "message": "Salesforce Org bearbeiten"
+  },
+  "add_org_dialog_title": {
+    "message": "Salesforce Org hinzufügen"
+  },
+  "add_org_dialog_matching_criteria": {
+    "message": "Übereinstimmungskriterium:"
+  },
+  "add_org_dialog_matching_criteria_equals": {
+    "message": "gleich (equals)"
+  },
+  "add_org_dialog_matching_criteria_contains": {
+    "message": "beinhaltet (contains)"
+  },
+  "add_org_dialog_criteria": {
+    "message": "Kriterium:"
+  },
+  "add_org_dialog_groupname": {
+    "message": "Gruppenname:"
+  },
+  "add_org_dialog_color": {
+    "message": "Farbe:"
+  },
+  "delete_entry_question": {
+    "message": "Möchtest du diesen Eintrag wirklich löschen?"
+  },
+  "delete": {
+    "message": "Löschen"
+  },
+  "settings_title": {
+    "message": "Einstellungen"
+  },
+  "settings_autogroup": {
+    "message": "Automatisches gruppieren:"
+  },
+  "language": {
+    "message": "Sprache:"
+  },
+  "german": {
+    "message": "Deutsch"
+  },
+  "english": {
+    "message": "Englisch"
+  },
+  "color_grey": {
+    "message": "Grau"
+  },
+  "color_blue": {
+    "message": "Blau"
+  },
+  "color_red": {
+    "message": "Rot"
+  },
+  "color_yellow": {
+    "message": "Gelb"
+  },
+  "color_green": {
+    "message": "Grün"
+  },
+  "color_pink": {
+    "message": "Pink"
+  },
+  "color_purple": {
+    "message": "Lila"
+  },
+  "color_cyan": {
+    "message": "Cyan"
+  },
+  "color_orange": {
+    "message": "Orange"
+  },
+  "export_orgs": {
+    "message": "Backup exportieren"
+  },
+  "import_orgs": {
+    "message": "Backup importieren"
+  }
+}
